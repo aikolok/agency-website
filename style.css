@@ -9,6 +9,7 @@ font-family: 'Montserrat', sans-serif;
   --primary-color: #fec810;
   --secondary-color: #fed136;
   --light-color: #ffffff;
+  --grey-color: #6c757d;
 }
 
 * {
@@ -23,6 +24,10 @@ a {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .btn {
@@ -41,22 +46,41 @@ a {
   background-color: var(--primary-color);
 }
 
+.title {
+  width: 50%;
+  margin: 10% auto 5% auto;
+  text-align: center;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.title p {
+  font-family: "Merriweather", serif;
+  color: var(--grey-color);
+  font-style: italic;
+}
+
 /* Hero */
 header {
   background-image: url("https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   width: 100vw;
 }
 
 .navbar {
   display: flex;
-  position: sticky;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  left: 10%;
 }
 
 .logo a {
@@ -90,6 +114,7 @@ ul.nav li a:hover {
   justify-content: center;
   align-items: center;
   height: 90vh;
+  padding-top: 10vh;
   color: var(--light-color);
 }
 
